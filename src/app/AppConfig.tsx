@@ -8,7 +8,9 @@ import { transformVKBridgeAdaptivity } from '../shared/utils';
 import { router } from './routes';
 import { App } from './App';
 import { Provider } from 'react-redux';
-import store from './store';
+import { setupStore } from './store';
+
+const store = setupStore()
 
 export const AppConfig = () => {
   const vkBridgeAppearance = useAppearance() || undefined;

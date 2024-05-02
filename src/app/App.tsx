@@ -6,8 +6,6 @@ import { DEFAULT_VIEW_PANELS } from './routes';
 import { Home } from '../panels/Home';
 import { News } from '../panels/NewsPanel';
 
-// import './App.css'
-
 export const App = () => {
 
   const { panel: activePanel = DEFAULT_VIEW_PANELS.HOME } = useActiveVkuiLocation();

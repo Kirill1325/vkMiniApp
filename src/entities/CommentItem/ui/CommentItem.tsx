@@ -40,7 +40,7 @@ export const CommentItem = ({ commentId, commentParent }: CommentItemProps) => {
             subhead={comment.by + ' ' + formattedTime}
             actions={
                 comment.kids && commentParent?.type === 'story' && !skip &&
-                <Button  mode="secondary" size="s" onClick={() => handleClick()}>
+                <Button data-testid='btn'  mode="secondary" size="s" onClick={() => handleClick()}>
                    <Icon16Dropdown /> 
                 </Button>
             }
